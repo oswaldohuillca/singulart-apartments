@@ -1,0 +1,27 @@
+<img
+  src="/principal-image.png"
+  alt="Edificio"
+  id="hero-img"
+  class="max-h-[80vh] 2xl:max-h-[80vh] hero-img"
+/>
+
+<style lang="scss">
+  .hero-img {
+    @apply relative right-0 bottom-0;
+    margin-bottom: -100px;
+    margin-top: 100px;
+
+    @screen lg {
+      @apply absolute;
+      margin-top: 0;
+    }
+
+    @screen xl {
+      width: 46rem;
+    }
+
+    @screen 2xl {
+      width: 48rem;
+    }
+  }
+</style>

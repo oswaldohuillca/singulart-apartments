@@ -1,0 +1,82 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+type Component = "h1" | "h2" | "h3" | "h4" | "h5";
+
+interface Props extends HTMLAttributes<Component> {
+  component: Component;
+}
+
+const { component, ...attrs } = Astro.props;
+---
+
+{
+  component == "h1" && (
+    <h1 {...attrs}>
+      <slot />
+    </h1>
+  )
+}
+{
+  component == "h2" && (
+    <h2 class={`heading-h2 ${attrs.class}`} {...attrs}>
+      <slot />
+    </h2>
+  )
+}
+
+{
+  component == "h3" && (
+    <h2 class={`heading-h3 ${attrs.class}`}>
+      <slot />
+    </h2>
+  )
+}
+
+<style lang="scss">
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  a {
+    // font-family: Poppins;
+  }
+
+  .heading-h2 {
+    @apply text-secondary text-xl font-bold relative w-fit;
+
+    @media (min-width: theme("screens.md")) {
+      @apply text-2xl;
+    }
+
+    &::before {
+      content: "";
+      width: 5rem;
+      height: 0.25rem;
+      bottom: 50%;
+      left: -8rem;
+      @apply bg-primary absolute;
+    }
+
+    &::after {
+      content: "";
+      width: 5rem;
+      height: 0.25rem;
+      bottom: 50%;
+      right: -8rem;
+      @apply bg-primary absolute;
+    }
+  }
+
+  .heading-h3 {
+    @apply text-secondary text-lg font-bold relative;
+
+    @media (min-width: theme("screens.md")) {
+      @apply text-xl;
+    }
+  }
+</style>
