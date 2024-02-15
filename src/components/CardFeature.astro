@@ -1,0 +1,22 @@
+---
+import { Image } from "astro:assets";
+import Typography from "../components/Typography.astro";
+interface Props {
+  title: string;
+  label: string;
+}
+
+const { title, label } = Astro.props;
+---
+
+<figure class="flex items-center gap-4">
+  <picture
+    class="p-5 rounded-full border border-primary border-solid flex justify-center items-center"
+  >
+    <Image src="/icons/building.png" alt="Edificio" width={56} height={55} />
+  </picture>
+  <figcaption class="counter-container flex flex-col">
+    <span class="text-primary font-bold text-6xl">{title}</span>
+    <Typography component="h3" class="uppercase">{label}</Typography>
+  </figcaption>
+</figure>
