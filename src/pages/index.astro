@@ -2,15 +2,15 @@
 import Layout from "../layouts/Layout.astro";
 import Banner from "../sections/Banner.astro";
 import Offet from "../sections/Offet.astro";
-import Gallery from "../sections/Gallery.astro";
+import Gallery from "../sections/Gallery.svelte";
 import Location from "../sections/Location.astro";
 import Contact from "../sections/Contact.astro";
 ---
 
 <Layout title="Welcome to Astro.">
 	<Banner />
-	<Offet />
-	<Gallery />
+	<!-- <Offet /> -->
+	<Gallery client:load />
 	<Location />
 	<Contact />
 </Layout>
