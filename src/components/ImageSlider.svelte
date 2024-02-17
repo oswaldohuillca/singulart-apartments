@@ -24,7 +24,7 @@
   ]
 </script>
 
-<section class="py-32">
+<section class="py-32 relative">
 
   <slot />
 
