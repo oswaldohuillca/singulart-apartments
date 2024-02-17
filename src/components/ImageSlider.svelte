@@ -2,23 +2,23 @@
   import { Splide, SplideSlide, SplideTrack } from "@splidejs/svelte-splide";
   const images = [
     {
-      src: "/rooms/room-1.png",
+      src: "/rooms/room-1.avif",
       title: "Sala / comedor"
     },
     {
-      src: "/rooms/room-2.png",
+      src: "/rooms/room-2.avif",
       title: "Sala / comedor"
     },
     {
-      src: "/rooms/room-3.png",
+      src: "/rooms/room-3.avif",
       title: "Sala / comedor"
     },
     {
-      src: "/rooms/room-4.png",
+      src: "/rooms/room-4.avif",
       title: "Sala / comedor"
     },
     {
-      src: "/rooms/room-5.png",
+      src: "/rooms/room-5.avif",
       title: "Sala / comedor"
     }
   ]
