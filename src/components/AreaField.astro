@@ -1,0 +1,44 @@
+---
+interface Props {
+  label: string;
+}
+
+const { label } = Astro.props;
+---
+
+<label>
+  <textarea placeholder=""></textarea>
+  <span class="label">{label}</span>
+  <span class="marker"></span>
+</label>
+
+<style lang="scss">
+  label {
+    @apply relative block;
+
+    textarea {
+      @apply py-3 w-full border-b-2 border-b-slate-200 appearance-none resize-none;
+
+      &:focus-visible {
+        outline: 0;
+      }
+
+      &:focus ~ span.marker {
+        @apply w-full;
+      }
+
+      &:focus ~ span.label,
+      &:not(:placeholder-shown) ~ span.label {
+        @apply transform -translate-y-10 text-[10px];
+      }
+    }
+
+    span.label {
+      @apply absolute top-0 left-0 bottom-0 my-auto h-fit transition-all ease-out duration-300 pointer-events-none;
+    }
+
+    span.marker {
+      @apply w-0 absolute bottom-2 h-[2px] bg-primary left-0 ease-in duration-300;
+    }
+  }
+</style>

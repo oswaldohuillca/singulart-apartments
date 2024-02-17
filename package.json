@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@justinribeiro/lite-youtube": "^1.5.0",
     "@splidejs/splide": "^4.1.4",
     "@splidejs/svelte-splide": "^0.2.9",
     "svelte": "^4.2.11"
