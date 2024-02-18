@@ -5,9 +5,9 @@ import AreaField from "$lib/components/AreaField.astro";
 ---
 
 <section class="relative">
-  <div class="container py-32 flex justify-end">
+  <div class="container py-10 md:py-32 flex justify-end">
     <form
-      class="max-w-96 border-2 border-primary border-solid rounded-3xl p-8 flex flex-col gap-4"
+      class="max-w-96 border-2 border-primary border-solid rounded-3xl p-8 flex flex-col gap-4 relative z-20 bg-white"
     >
       <h1 class="font-bold text-center text-2xl">Contacto</h1>
       <p class="text-pretty text-center">
@@ -46,7 +46,7 @@ import AreaField from "$lib/components/AreaField.astro";
     alt="Builder"
     width={488}
     height={965}
-    class="absolute bottom-0 left-0"
+    class="md:absolute bottom-0 left-0"
   />
   <Image
     src="/contact-happy-family.avif"

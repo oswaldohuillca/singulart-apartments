@@ -5,7 +5,7 @@ import Video from "../components/Video.astro";
 import CardFeature from "../components/CardFeature.astro";
 ---
 
-<section id="video" class="we-offer relative py-32">
+<section id="video" class="we-offer relative py-10 md:py-32">
   <span class="absolute -top-12 left-0">
     <svg
       class="w-[33px] h-[184px] lg:w-[63px] lg:h-[351px]"
@@ -31,7 +31,7 @@ import CardFeature from "../components/CardFeature.astro";
   >
     <Typography component="h2" class="font-extrabold">Te Ofrecemos</Typography>
 
-    <div class="grid grid-cols-5 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
       <Card
         title="Ubicación"
         img={{
@@ -110,7 +110,7 @@ import CardFeature from "../components/CardFeature.astro";
 
     <Video />
 
-    <ul class="w-full flex justify-between flex-wrap gap-4 md:px-8">
+    <ul class="w-full grid grid-cols-2 gap-y-4 md:grid-cols-4 md:gap-4 md:px-8">
       <li>
         <CardFeature title="17" label="PISOS" />
       </li>

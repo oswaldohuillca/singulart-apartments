@@ -3,7 +3,7 @@ import Typography from "$lib/components/Typography.astro";
 import { Image } from "astro:assets";
 ---
 
-<section id="ubicacion" class="py-32 relative overflow-hidden">
+<section id="ubicacion" class="py-10 md:py-32 relative overflow-hidden">
   <span class="absolute -top-8 lg:top-80 left-0">
     <svg
       class="w-[32px] h-[181px] lg:w-[62px] lg:h-[342px]"
@@ -76,7 +76,11 @@ import { Image } from "astro:assets";
 
       <ul class="flex gap-2 lg:ml-[8rem]">
         <li class="location-item">
-          <a href="#" class="flex gap-2 items-center font-bold" target="_blank">
+          <a
+            href="#"
+            class="flex gap-2 items-center font-bold text-xs md:text-base"
+            target="_blank"
+          >
             <svg
               width="50"
               height="50"
@@ -104,7 +108,11 @@ import { Image } from "astro:assets";
           </a>
         </li>
         <li class="location-item">
-          <a href="#" class="flex gap-2 items-center font-bold" target="_blank">
+          <a
+            href="#"
+            class="flex gap-2 items-center font-bold text-xs md:text-base"
+            target="_blank"
+          >
             <svg
               width="50"
               height="50"

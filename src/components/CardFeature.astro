@@ -1,6 +1,5 @@
 ---
 import { Image } from "astro:assets";
-import Typography from "../components/Typography.astro";
 interface Props {
   title: string;
   label: string;
@@ -11,12 +10,18 @@ const { title, label } = Astro.props;
 
 <figure class="flex items-center gap-4">
   <picture
-    class="p-5 rounded-full border border-primary border-solid flex justify-center items-center"
+    class="p-3 rounded-full border border-primary border-solid flex justify-center items-center md:p-5"
   >
-    <Image src="/icons/building.avif" alt="Edificio" width={56} height={55} />
+    <Image
+      src="/icons/building.avif"
+      alt="Edificio"
+      width={56}
+      height={55}
+      class="w-6 h-6 md:w-auto md:h-auto"
+    />
   </picture>
   <figcaption class="counter-container flex flex-col">
-    <span class="text-primary font-bold text-6xl">{title}</span>
-    <Typography component="h3" class="uppercase">{label}</Typography>
+    <span class="text-primary font-bold text-2xl md:text-6xl">{title}</span>
+    <h3 class="uppercase font-bold text-xs md:text-xl">{label}</h3>
   </figcaption>
 </figure>

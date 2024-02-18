@@ -55,27 +55,36 @@ const { component, ...attrs } = Astro.props;
 
     &::before {
       content: "";
-      width: 5rem;
-      height: 0.25rem;
       bottom: 50%;
-      left: -8rem;
+      height: 0.25rem;
+      width: 3rem;
+      left: -4rem;
       @apply bg-primary absolute;
+
+      @screen md {
+        width: 5rem;
+        left: -8rem;
+      }
     }
 
     &::after {
       content: "";
-      width: 5rem;
+      width: 3rem;
       height: 0.25rem;
       bottom: 50%;
-      right: -8rem;
+      right: -4rem;
       @apply bg-primary absolute;
+      @screen md {
+        width: 5rem;
+        right: -8rem;
+      }
     }
   }
 
   .heading-h3 {
     @apply text-secondary text-lg font-bold relative;
 
-    @media (min-width: theme("screens.md")) {
+    @screen md {
       @apply text-xl;
     }
   }
