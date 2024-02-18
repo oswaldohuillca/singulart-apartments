@@ -1,21 +1,28 @@
 ---
-
+import PlayButton from "$lib/components/PlayButton.astro";
 ---
 
 <div class="relative rounded-xl overflow-hidden w-full" id="video-container">
-  <lite-youtube videoid="s2-AqZOZtTk" class="h-[50vh] md:h-[70vh]">
+  <lite-youtube videoid="s2-AqZOZtTk" class="h-[50vh] md:h-[70vh]" id="video">
   </lite-youtube>
 
-  <!-- <div
-    class="play-container absolute top-0 left-0 w-full h-full z-30 bg-no-repeat bg-center bg-cover flex justify-center items-center"
-    style="background-image: url('/video-bg.png')"
+  <div
+    class="play-container absolute top-0 left-0 w-full h-full z-30 bg-no-repeat bg-center bg-cover flex justify-center items-center pointer-events-none"
+    style="background-image: url('/video-bg.avif')"
+    id="video-banner"
   >
-    <button>play</button>
-  </div> -->
+    <PlayButton />
+  </div>
 </div>
 
 <script>
   import "@justinribeiro/lite-youtube";
 
-  const videoContainer = document.querySelector("#video-container");
+  // const videoContainer = document.querySelector("#video-container");
+  // const playButton  = document.querySelector('.play-button')
+  const videoBanner = document.querySelector("#video-banner");
+  const video = document.querySelector("#video");
+  video?.addEventListener("click", (e) => {
+    videoBanner?.classList.add("opacity-0");
+  });
 </script>
