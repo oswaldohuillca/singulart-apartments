@@ -1,5 +1,6 @@
 <script lang="ts">
   import { Splide, SplideSlide, SplideTrack } from "@splidejs/svelte-splide";
+
   const images = [
     {
       src: "/rooms/room-1.avif",
@@ -44,6 +45,7 @@
       speed: 2500,
       autoplay: true,
       pagination: false,
+      lazyLoad: "nearby",
       breakpoints: {
         767: {
           padding: "15%",
@@ -56,7 +58,15 @@
       {#each images as { src, title }, i}
         <SplideSlide>
           <figure>
-            <img {src} alt={title} class="w-full" width="1374" height="828" />
+            <img
+              {src}
+              alt={title}
+              class="w-full"
+              width="1374"
+              height="828"
+              loading="lazy"
+              decoding="async"
+            />
             <figcaption>
               <h3>{title}</h3>
             </figcaption>
