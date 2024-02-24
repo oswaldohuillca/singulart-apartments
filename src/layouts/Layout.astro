@@ -77,33 +77,35 @@ const { title } = Astro.props;
 						alt="Singulart"
 						width={193}
 						height={54}
+						class="w-32 h-auto md:w-auto"
 					/>
 				</a>
 
-				<nav class="hidden lg:block navigation">
+				<nav class="flex items-center">
 					<ul class="flex items-center justify-end gap-6">
-						<li class="active">
-							<a href="#" class="button button-secondary contact-link">
-								Inicio
-							</a>
+						<li class="hidden md:block">
+							<a href="#banner" class="button-link"> Inicio</a>
 						</li>
-						<li class="active">
-							<a href="#" class="button button-secondary contact-link">
-								Video
-							</a>
+						<li class="hidden md:block">
+							<a href="#video" class="button-link"> Video</a>
 						</li>
-						<li class="active">
-							<a href="#" class="button button-secondary contact-link">
-								Ubicación
-							</a>
+						<li class="hidden md:block">
+							<a href="#galeria" class="button-link"> Fotografía</a>
 						</li>
-						<li class="active">
-							<a href="#" class="button button-secondary contact-link">
-								Fotografía
+						<li class="hidden md:block">
+							<a href="#ubicacion" class="button-link"> Ubicación</a>
+						</li>
+
+						<li>
+							<a
+								href="#contacto"
+								class="bg-secondary px-4 py-2 text-white rounded-full button-link"
+							>
+								Contacto
 							</a>
 						</li>
 
-						<li class="flex gap-2 items-center">
+						<li class="gap-2 items-center hidden md:flex">
 							<a
 								href="#"
 								target="_blank"
@@ -139,23 +141,6 @@ const { title } = Astro.props;
 						</li>
 					</ul>
 				</nav>
-
-				<button
-					class="hidden mobile-menu-button lg:hidden"
-					aria-label="mobile menu"
-				>
-					<svg
-						width="25"
-						height="23"
-						viewBox="0 0 25 23"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							d="M0.421875 1.8444C0.421875 1.5232 0.549473 1.21515 0.776598 0.988024C1.00372 0.760898 1.31177 0.633301 1.63298 0.633301H23.4328C23.754 0.633301 24.062 0.760898 24.2892 0.988024C24.5163 1.21515 24.6439 1.5232 24.6439 1.8444C24.6439 2.1656 24.5163 2.47365 24.2892 2.70078C24.062 2.9279 23.754 3.0555 23.4328 3.0555H1.63298C1.31177 3.0555 1.00372 2.9279 0.776598 2.70078C0.549473 2.47365 0.421875 2.1656 0.421875 1.8444V1.8444ZM1.63298 12.7443H23.4328C23.754 12.7443 24.062 12.6167 24.2892 12.3896C24.5163 12.1625 24.6439 11.8544 24.6439 11.5332C24.6439 11.212 24.5163 10.904 24.2892 10.6768C24.062 10.4497 23.754 10.3221 23.4328 10.3221H1.63298C1.31177 10.3221 1.00372 10.4497 0.776598 10.6768C0.549473 10.904 0.421875 11.212 0.421875 11.5332C0.421875 11.8544 0.549473 12.1625 0.776598 12.3896C1.00372 12.6167 1.31177 12.7443 1.63298 12.7443V12.7443ZM1.63298 22.4331H23.4328C23.754 22.4331 24.062 22.3055 24.2892 22.0784C24.5163 21.8513 24.6439 21.5432 24.6439 21.222C24.6439 20.9008 24.5163 20.5928 24.2892 20.3656C24.062 20.1385 23.754 20.0109 23.4328 20.0109H1.63298C1.31177 20.0109 1.00372 20.1385 0.776598 20.3656C0.549473 20.5928 0.421875 20.9008 0.421875 21.222C0.421875 21.5432 0.549473 21.8513 0.776598 22.0784C1.00372 22.3055 1.31177 22.4331 1.63298 22.4331V22.4331Z"
-							fill="white"></path>
-					</svg>
-				</button>
 			</div>
 		</header>
 
@@ -208,14 +193,16 @@ const { title } = Astro.props;
 
 		<span
 			class="fixed bottom-6 right-5 text-base md:text-5xl text-white font-bold bg-secondary/20 backdrop-blur-3xl p-4 rounded-2xl z-[100] uppercase pointer-events-none"
-			>unofficial</span
 		>
+			unofficial
+		</span>
 	</body>
 </html>
 
 <style is:global>
-	* {
+	html {
 		font-family: "Poppins";
+		scroll-behavior: smooth;
 	}
 
 	@keyframes add-blur {
@@ -230,3 +217,29 @@ const { title } = Astro.props;
 		animation-range: 0 500px;
 	}
 </style>
+
+<script>
+	const navItems = document.querySelectorAll("nav .button-link");
+	const sections = document.querySelectorAll("section");
+
+	const observer = new IntersectionObserver(
+		(entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					const id = entry.target.getAttribute("id");
+					if (!id) return;
+					const navAnchor = document.querySelector(`[href="#${id}"]`);
+					navAnchor?.classList.add("font-bold");
+				} else {
+					navItems.forEach((nav) => nav.classList.remove("font-bold"));
+				}
+			});
+		},
+		{
+			rootMargin: "30% 30% 0% 0%",
+			threshold: 0.8,
+		},
+	);
+
+	sections.forEach((section) => observer.observe(section));
+</script>

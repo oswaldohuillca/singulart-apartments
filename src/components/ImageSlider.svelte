@@ -25,7 +25,7 @@
   ];
 </script>
 
-<section class="py-10 md:py-32 relative">
+<section class="py-10 md:py-32 relative" id="galeria">
   <slot />
 
   <Splide
