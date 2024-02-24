@@ -103,195 +103,38 @@ const { title } = Astro.props;
 							</a>
 						</li>
 
-						<li class="flex gap-2">
-							<a href="#" target="_blank" aria-label="facebook">
-								<svg
-									width="60"
-									height="60"
-									viewBox="0 0 60 60"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<g filter="url(#filter0_d_123_428)">
-										<circle cx="30" cy="26" r="21" fill="white"></circle>
-									</g>
-									<g clip-path="url(#clip0_123_428)">
-										<path
-											d="M27.512 37.6662C27.512 37.572 27.4932 37.4778 27.4932 37.3648C27.4932 34.0315 27.4932 30.6793 27.4932 27.346C27.4932 27.2519 27.4932 27.1577 27.4932 27.0259C26.2879 27.0259 25.1203 27.0259 23.915 27.0259C23.915 25.6323 23.915 24.2763 23.915 22.8827C25.1015 22.8827 26.2691 22.8827 27.4932 22.8827C27.4932 22.7697 27.4932 22.6756 27.4932 22.5814C27.4932 21.4891 27.4744 20.4157 27.512 19.3234C27.5685 18.024 27.9452 16.8187 28.868 15.8394C29.5648 15.105 30.4499 14.6718 31.4292 14.4647C32.239 14.2952 33.0487 14.314 33.8585 14.3517C34.5177 14.3705 35.1768 14.427 35.8359 14.4835C35.8924 14.4835 35.9301 14.5023 36.0054 14.5212C36.0054 15.7453 36.0054 16.9694 36.0054 18.2123C35.9301 18.2123 35.8548 18.2123 35.7606 18.2123C34.9508 18.2311 34.141 18.2123 33.3312 18.25C32.3708 18.3065 31.8246 18.8338 31.787 19.7942C31.7493 20.7923 31.7681 21.7905 31.7681 22.8074C31.7681 22.8262 31.787 22.8262 31.787 22.8827C33.1241 22.8827 34.48 22.8827 35.8548 22.8827C35.6665 24.2763 35.497 25.6511 35.3275 27.0259C34.141 27.0259 32.9734 27.0259 31.787 27.0259C31.787 27.12 31.7681 27.1765 31.7681 27.2519C31.7681 30.6793 31.7681 34.1068 31.7681 37.5155C31.7681 37.572 31.7681 37.6285 31.787 37.6662C30.3745 37.6662 28.9433 37.6662 27.512 37.6662Z"
-											fill="#FFC015"></path>
-									</g>
-									<defs>
-										<filter
-											id="filter0_d_123_428"
-											x="0"
-											y="0"
-											width="60"
-											height="60"
-											filterUnits="userSpaceOnUse"
-											color-interpolation-filters="sRGB"
-										>
-											<feFlood flood-opacity="0" result="BackgroundImageFix"
-											></feFlood>
-											<feColorMatrix
-												in="SourceAlpha"
-												type="matrix"
-												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-												result="hardAlpha"></feColorMatrix>
-											<feOffset dy="4"></feOffset>
-											<feGaussianBlur stdDeviation="4.5"></feGaussianBlur>
-											<feComposite in2="hardAlpha" operator="out"></feComposite>
-											<feColorMatrix
-												type="matrix"
-												values="0 0 0 0 0.705882 0 0 0 0 0.494118 0 0 0 0 0.231373 0 0 0 0.18 0"
-											></feColorMatrix>
-											<feBlend
-												mode="normal"
-												in2="BackgroundImageFix"
-												result="effect1_dropShadow_123_428"></feBlend>
-											<feBlend
-												mode="normal"
-												in="SourceGraphic"
-												in2="effect1_dropShadow_123_428"
-												result="shape"></feBlend>
-										</filter>
-										<clipPath id="clip0_123_428">
-											<rect
-												width="12.0904"
-												height="23.3333"
-												fill="white"
-												transform="translate(23.9336 14.333)"></rect>
-										</clipPath>
-									</defs>
-								</svg>
+						<li class="flex gap-2 items-center">
+							<a
+								href="#"
+								target="_blank"
+								aria-label="Facebook"
+								class="bg-white w-10 h-10 flex items-center justify-center text-primary text-xl hover:shadow-xl rounded-full ease-in-out duration-300"
+							>
+								<i class="icon-[vaadin--facebook]"></i>
 							</a>
-							<a href="#" target="_blank" aria-label="facebook">
-								<svg
-									width="60"
-									height="60"
-									viewBox="0 0 60 60"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<g filter="url(#filter0_d_123_433)">
-										<circle cx="30" cy="26" r="21" fill="white"></circle>
-									</g>
-									<g clip-path="url(#clip0_123_433)">
-										<path
-											d="M33.5327 37.7073C31.1897 37.7073 28.8422 37.7073 26.4992 37.7073C26.3571 37.6936 26.2149 37.6752 26.0682 37.6706C25.142 37.6477 24.2113 37.611 23.3034 37.391C21.3685 36.9233 19.9288 35.8275 19.0714 34.0164C18.5395 32.893 18.3836 31.6872 18.3699 30.4629C18.3424 27.9457 18.3195 25.424 18.3332 22.9068C18.3378 21.7009 18.347 20.4859 18.6404 19.2983C19.1494 17.2351 20.3552 15.7541 22.3451 14.9471C23.4135 14.5115 24.5414 14.3923 25.6785 14.3786C28.0535 14.3465 30.4286 14.3281 32.8036 14.3327C34.0508 14.3373 35.3025 14.3281 36.5313 14.5987C38.7963 15.0938 40.3873 16.3914 41.1851 18.5968C41.5703 19.656 41.6574 20.7656 41.662 21.8751C41.6711 24.5712 41.6803 27.2626 41.6574 29.9586C41.6528 30.7243 41.5886 31.4946 41.474 32.2511C41.231 33.8009 40.534 35.1168 39.3144 36.1301C38.1223 37.1159 36.7101 37.5102 35.2016 37.611C34.6422 37.6523 34.0875 37.6752 33.5327 37.7073ZM30.0159 35.6395C30.0159 35.6257 30.0159 35.6165 30.0159 35.6028C30.6303 35.6028 31.2493 35.6211 31.8637 35.5982C33.1934 35.5523 34.5322 35.5661 35.8481 35.401C37.6455 35.1718 38.8605 34.131 39.3007 32.3428C39.4749 31.6275 39.5345 30.871 39.5483 30.1282C39.5895 27.9595 39.6033 25.7908 39.5895 23.622C39.5803 22.4895 39.5437 21.3524 39.4107 20.2291C39.1906 18.3492 38.0031 17.07 36.1553 16.7032C35.3483 16.5427 34.5093 16.4923 33.684 16.4785C31.4923 16.4464 29.3007 16.4419 27.109 16.4694C26.0911 16.4831 25.0641 16.5198 24.0599 16.6665C22.2764 16.9279 21.0613 18.0879 20.7037 19.8485C20.5478 20.6097 20.4928 21.4029 20.479 22.1823C20.4378 24.0714 20.424 25.9558 20.4469 27.8449C20.4607 29.1516 20.4928 30.4629 20.6212 31.7651C20.7541 33.1039 21.3914 34.1906 22.5881 34.8829C23.3218 35.3048 24.1333 35.4836 24.9678 35.5111C26.6505 35.5707 28.3332 35.5982 30.0159 35.6395Z"
-											fill="#FFC015"></path>
-										<path
-											d="M24.0049 26.0155C24.0049 22.7005 26.7101 20.0045 30.0205 20.0137C33.3401 20.0229 36.004 22.6868 36.0177 26.0064C36.0315 29.3168 33.3309 32.0219 30.0159 32.0265C26.7055 32.0265 24.0049 29.3305 24.0049 26.0155ZM30.0113 29.9082C32.1663 29.9082 33.8994 28.1797 33.904 26.0247C33.9086 23.8697 32.18 22.132 30.0251 22.1274C27.8609 22.1228 26.1186 23.8606 26.1232 26.0247C26.1232 28.1751 27.8563 29.9082 30.0113 29.9082Z"
-											fill="#FFC015"></path>
-										<path
-											d="M36.2881 18.3721C37.0721 18.3858 37.6727 19.0231 37.6498 19.8118C37.6315 20.5821 36.9987 21.1827 36.2193 21.1689C35.449 21.1552 34.8346 20.5087 34.8529 19.7246C34.8759 18.9635 35.5132 18.3583 36.2881 18.3721Z"
-											fill="#FFC015"></path>
-									</g>
-									<defs>
-										<filter
-											id="filter0_d_123_433"
-											x="0"
-											y="0"
-											width="60"
-											height="60"
-											filterUnits="userSpaceOnUse"
-											color-interpolation-filters="sRGB"
-										>
-											<feFlood flood-opacity="0" result="BackgroundImageFix"
-											></feFlood>
-											<feColorMatrix
-												in="SourceAlpha"
-												type="matrix"
-												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-												result="hardAlpha"></feColorMatrix>
-											<feOffset dy="4"></feOffset>
-											<feGaussianBlur stdDeviation="4.5"></feGaussianBlur>
-											<feComposite in2="hardAlpha" operator="out"></feComposite>
-											<feColorMatrix
-												type="matrix"
-												values="0 0 0 0 0.705882 0 0 0 0 0.494118 0 0 0 0 0.231373 0 0 0 0.18 0"
-											></feColorMatrix>
-											<feBlend
-												mode="normal"
-												in2="BackgroundImageFix"
-												result="effect1_dropShadow_123_433"></feBlend>
-											<feBlend
-												mode="normal"
-												in="SourceGraphic"
-												in2="effect1_dropShadow_123_433"
-												result="shape"></feBlend>
-										</filter>
-										<clipPath id="clip0_123_433">
-											<rect
-												width="23.3333"
-												height="23.3746"
-												fill="white"
-												transform="translate(18.333 14.333)"></rect>
-										</clipPath>
-									</defs>
-								</svg>
+							<a
+								href="#"
+								target="_blank"
+								aria-label="Instagram"
+								class="bg-white w-10 h-10 flex items-center justify-center text-primary text-xl hover:shadow-xl rounded-full ease-in-out duration-300"
+							>
+								<i class="icon-[bi--instagram]"></i>
 							</a>
-							<a href="#" target="_blank" aria-label="facebook">
-								<svg
-									width="60"
-									height="60"
-									viewBox="0 0 60 60"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<g filter="url(#filter0_d_123_440)">
-										<circle cx="30" cy="26" r="21" fill="white"></circle>
-									</g>
-									<g clip-path="url(#clip0_123_440)">
-										<path
-											d="M29.9429 18.0664C32.3381 18.1615 34.7332 18.2456 37.1283 18.3516C37.6915 18.3772 38.2583 18.454 38.8141 18.5527C40.167 18.7977 41.03 19.7119 41.286 21.138C41.637 23.0944 41.7065 25.069 41.6407 27.0436C41.5932 28.4258 41.4615 29.8044 41.3262 31.183C41.2275 32.1922 40.8179 33.0515 39.9294 33.622C39.3882 33.973 38.7738 34.0717 38.1522 34.1376C35.7498 34.3899 33.3327 34.4484 30.9193 34.4374C28.473 34.4264 26.0266 34.3533 23.584 34.2729C22.8014 34.2473 22.0189 34.1485 21.24 34.0315C19.909 33.8377 19.0021 32.9235 18.7242 31.5486C18.45 30.1774 18.3841 28.7842 18.3439 27.391C18.3 25.5663 18.3549 23.7379 18.5889 21.9169C18.6401 21.5074 18.7096 21.0978 18.812 20.6992C19.1265 19.4779 20.1247 18.6551 21.4485 18.4906C23.7266 18.2054 26.0193 18.1798 28.3121 18.1432C28.8532 18.1322 29.3981 18.1432 29.9393 18.1432C29.9393 18.1176 29.9429 18.092 29.9429 18.0664Z"
-											fill="#FFC015"></path>
-										<path
-											d="M27.6904 22.8018C27.6904 25.142 27.6904 27.4458 27.6904 29.7787C29.7162 28.6122 31.7128 27.4604 33.7459 26.2902C31.7091 25.1164 29.7126 23.9682 27.6904 22.8018Z"
-											fill="white"></path>
-									</g>
-									<defs>
-										<filter
-											id="filter0_d_123_440"
-											x="0"
-											y="0"
-											width="60"
-											height="60"
-											filterUnits="userSpaceOnUse"
-											color-interpolation-filters="sRGB"
-										>
-											<feFlood flood-opacity="0" result="BackgroundImageFix"
-											></feFlood>
-											<feColorMatrix
-												in="SourceAlpha"
-												type="matrix"
-												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-												result="hardAlpha"></feColorMatrix>
-											<feOffset dy="4"></feOffset>
-											<feGaussianBlur stdDeviation="4.5"></feGaussianBlur>
-											<feComposite in2="hardAlpha" operator="out"></feComposite>
-											<feColorMatrix
-												type="matrix"
-												values="0 0 0 0 0.705882 0 0 0 0 0.494118 0 0 0 0 0.231373 0 0 0 0.18 0"
-											></feColorMatrix>
-											<feBlend
-												mode="normal"
-												in2="BackgroundImageFix"
-												result="effect1_dropShadow_123_440"></feBlend>
-											<feBlend
-												mode="normal"
-												in="SourceGraphic"
-												in2="effect1_dropShadow_123_440"
-												result="shape"></feBlend>
-										</filter>
-										<clipPath id="clip0_123_440">
-											<rect
-												width="23.3333"
-												height="16.3783"
-												fill="white"
-												transform="translate(18.333 18.0664)"></rect>
-										</clipPath>
-									</defs>
-								</svg>
+							<a
+								href="#"
+								target="_blank"
+								aria-label="Youtube"
+								class="bg-white w-10 h-10 flex items-center justify-center text-primary text-xl hover:shadow-xl rounded-full ease-in-out duration-300"
+							>
+								<i class="icon-[bi--youtube]"></i>
+							</a>
+							<a
+								href="https://github.com/oswaldohuillca/singulart-apartments"
+								target="_blank"
+								aria-label="Github"
+								class="bg-white w-10 h-10 flex items-center justify-center text-primary text-2xl hover:shadow-xl rounded-full ease-in-out duration-300"
+							>
+								<i class="icon-[ri--github-fill]"></i>
 							</a>
 						</li>
 					</ul>
@@ -321,81 +164,39 @@ const { title } = Astro.props;
 		<footer class="bg-secondary text-white py-4">
 			<main class="container">
 				<ul class="flex flex-col md:flex-row gap-4 items-center">
-					<li>Derechos reservados © 2024</li>
+					<!-- <li>Derechos reservados © 2024</li> -->
 					<li class="flex item-center gap-2">
 						<a
 							href="#"
 							target="_blank"
-							aria-label="social link"
-							class="bg-white w-12 h-12 rounded-full leading-none flex items-center justify-center"
+							aria-label="Facebook"
+							class="bg-white w-10 h-10 flex items-center justify-center text-primary text-xl hover:shadow-xl rounded-full ease-in-out duration-300"
 						>
-							<svg
-								width="13"
-								height="24"
-								viewBox="0 0 13 24"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M4.51203 23.6662C4.51203 23.572 4.49319 23.4778 4.49319 23.3648C4.49319 20.0315 4.49319 16.6793 4.49319 13.346C4.49319 13.2519 4.49319 13.1577 4.49319 13.0259C3.28792 13.0259 2.12031 13.0259 0.915039 13.0259C0.915039 11.6323 0.915039 10.2763 0.915039 8.88274C2.10148 8.88274 3.26909 8.88274 4.49319 8.88274C4.49319 8.76974 4.49319 8.67558 4.49319 8.58142C4.49319 7.48914 4.47436 6.41569 4.51203 5.32341C4.56852 4.02398 4.94517 2.81871 5.86796 1.83942C6.56476 1.10496 7.44988 0.671813 8.42916 0.464657C9.23896 0.295165 10.0487 0.313998 10.8585 0.351663C11.5177 0.370495 12.1768 0.426992 12.8359 0.483489C12.8924 0.483489 12.9301 0.502322 13.0054 0.521154C13.0054 1.74526 13.0054 2.96937 13.0054 4.2123C12.9301 4.2123 12.8548 4.2123 12.7606 4.2123C11.9508 4.23114 11.141 4.2123 10.3312 4.24997C9.37078 4.30647 8.82464 4.83377 8.78698 5.79422C8.74931 6.79234 8.76815 7.79046 8.76815 8.80741C8.76815 8.82624 8.78698 8.82624 8.78698 8.88274C10.1241 8.88274 11.48 8.88274 12.8548 8.88274C12.6665 10.2763 12.497 11.6511 12.3275 13.0259C11.141 13.0259 9.97342 13.0259 8.78698 13.0259C8.78698 13.12 8.76815 13.1765 8.76815 13.2519C8.76815 16.6793 8.76815 20.1068 8.76815 23.5155C8.76815 23.572 8.76815 23.6285 8.78698 23.6662C7.37455 23.6662 5.94329 23.6662 4.51203 23.6662Z"
-									fill="#FFC115"></path>
-							</svg>
+							<i class="icon-[vaadin--facebook]"></i>
 						</a>
 						<a
 							href="#"
 							target="_blank"
-							aria-label="social link"
-							class="bg-white w-12 h-12 rounded-full leading-none flex items-center justify-center"
+							aria-label="Instagram"
+							class="bg-white w-10 h-10 flex items-center justify-center text-primary text-xl hover:shadow-xl rounded-full ease-in-out duration-300"
 						>
-							<svg
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M15.2036 23.3753C12.8606 23.3753 10.5131 23.3753 8.17009 23.3753C8.02796 23.3615 7.88582 23.3432 7.7391 23.3386C6.81292 23.3157 5.88215 23.279 4.97431 23.0589C3.03942 22.5912 1.59971 21.4954 0.742305 19.6843C0.210439 18.561 0.0545471 17.3551 0.040792 16.1309C0.0132817 13.6137 -0.00964361 11.0919 0.00411155 8.57475C0.0086966 7.36888 0.0178667 6.15384 0.31131 4.96631C0.820251 2.90304 2.02612 1.42206 4.01603 0.615094C5.08435 0.179514 6.21227 0.0603029 7.34937 0.0465477C9.72442 0.0144524 12.0995 -0.00388784 14.4745 0.000697215C15.7217 0.00528227 16.9734 -0.00388783 18.2022 0.26663C20.4672 0.761816 22.0582 2.05939 22.856 4.2648C23.2412 5.32394 23.3283 6.43353 23.3329 7.54311C23.342 10.2391 23.3512 12.9305 23.3283 15.6266C23.3237 16.3923 23.2595 17.1625 23.1449 17.9191C22.9019 19.4688 22.2049 20.7847 20.9853 21.798C19.7932 22.7838 18.381 23.1781 16.8725 23.279C16.3131 23.3203 15.7584 23.3432 15.2036 23.3753ZM11.6868 21.3074C11.6868 21.2937 11.6868 21.2845 11.6868 21.2708C12.3012 21.2708 12.9202 21.2891 13.5346 21.2662C14.8643 21.2203 16.2031 21.2341 17.519 21.069C19.3164 20.8398 20.5314 19.799 20.9716 18.0108C21.1458 17.2955 21.2054 16.539 21.2192 15.7962C21.2604 13.6275 21.2742 11.4587 21.2604 9.29001C21.2512 8.15751 21.2146 7.02041 21.0816 5.89708C20.8615 4.0172 19.674 2.73797 17.8262 2.37117C17.0192 2.21069 16.1802 2.16026 15.3549 2.1465C13.1632 2.11441 10.9716 2.10982 8.7799 2.13733C7.76202 2.15109 6.73497 2.18777 5.73084 2.33449C3.94726 2.59584 2.73222 3.75586 2.37458 5.51652C2.21869 6.27763 2.16367 7.07085 2.14992 7.85031C2.10865 9.73935 2.0949 11.6238 2.11782 13.5128C2.13158 14.8196 2.16367 16.1309 2.29205 17.4331C2.42502 18.7719 3.06234 19.8586 4.25904 20.5509C4.99265 20.9727 5.8042 21.1515 6.63868 21.1791C8.3214 21.2387 10.0041 21.2662 11.6868 21.3074Z"
-									fill="#FFC115"></path>
-								<path
-									d="M6.00488 12.0155C6.00488 8.70054 8.71006 6.00453 12.0205 6.0137C15.3401 6.02287 18.004 8.68678 18.0177 12.0064C18.0315 15.3168 15.3309 18.0219 12.0159 18.0265C8.70548 18.0265 6.00488 15.3305 6.00488 12.0155ZM12.0113 15.9082C14.1663 15.9082 15.8994 14.1797 15.904 12.0247C15.9086 9.86972 14.18 8.13199 12.0251 8.1274C9.86091 8.12282 8.11859 9.86055 8.12318 12.0247C8.12318 14.1751 9.85633 15.9082 12.0113 15.9082Z"
-									fill="#FFC115"></path>
-								<path
-									d="M18.2881 4.37206C19.0721 4.38581 19.6727 5.02313 19.6498 5.81176C19.6315 6.58205 18.9987 7.18269 18.2193 7.16894C17.449 7.15518 16.8346 6.50869 16.8529 5.72465C16.8759 4.96353 17.5132 4.3583 18.2881 4.37206Z"
-									fill="#FFC115"></path>
-							</svg>
+							<i class="icon-[bi--instagram]"></i>
 						</a>
 						<a
 							href="#"
 							target="_blank"
-							aria-label="social link"
-							class="bg-white w-12 h-12 rounded-full leading-none flex items-center justify-center"
+							aria-label="Youtube"
+							class="bg-white w-10 h-10 flex items-center justify-center text-primary text-xl hover:shadow-xl rounded-full ease-in-out duration-300"
 						>
-							<svg
-								width="24"
-								height="17"
-								viewBox="0 0 24 17"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<g clip-path="url(#clip0_123_486)">
-									<path
-										d="M11.9429 0.0664062C14.3381 0.16148 16.7332 0.245584 19.1283 0.351628C19.6915 0.377225 20.2583 0.454015 20.8141 0.552746C22.167 0.797744 23.03 1.71192 23.286 3.13803C23.637 5.09435 23.7065 7.06897 23.6407 9.04358C23.5932 10.4258 23.4615 11.8044 23.3262 13.183C23.2275 14.1922 22.8179 15.0515 21.9294 15.622C21.3882 15.973 20.7738 16.0717 20.1522 16.1376C17.7498 16.3899 15.3327 16.4484 12.9193 16.4374C10.473 16.4264 8.02663 16.3533 5.58396 16.2729C4.80143 16.2473 4.0189 16.1485 3.24002 16.0315C1.90899 15.8377 1.00213 14.9235 0.72422 13.5486C0.449968 12.1774 0.384148 10.7842 0.343924 9.39096C0.300044 7.56628 0.354894 5.73793 0.588922 3.9169C0.640116 3.50735 0.709593 3.0978 0.81198 2.69922C1.12646 1.47789 2.12473 0.655133 3.44845 0.490582C5.72657 0.20536 8.01931 0.179764 10.3121 0.143197C10.8532 0.132227 11.3981 0.143197 11.9393 0.143197C11.9393 0.1176 11.9429 0.0920031 11.9429 0.0664062Z"
-										fill="#FFC115"></path>
-									<path
-										d="M9.69043 4.80176C9.69043 7.14204 9.69043 9.44575 9.69043 11.7787C11.7162 10.6122 13.7128 9.46038 15.7459 8.29024C13.7091 7.11644 11.7126 5.96824 9.69043 4.80176Z"
-										fill="white"></path>
-								</g>
-								<defs>
-									<clipPath id="clip0_123_486">
-										<rect
-											width="23.3333"
-											height="16.3783"
-											fill="white"
-											transform="translate(0.333008 0.0664062)"></rect>
-									</clipPath>
-								</defs>
-							</svg>
+							<i class="icon-[bi--youtube]"></i>
+						</a>
+						<a
+							href="https://github.com/oswaldohuillca/singulart-apartments"
+							target="_blank"
+							aria-label="Github"
+							class="bg-white w-10 h-10 flex items-center justify-center text-primary text-2xl hover:shadow-xl rounded-full ease-in-out duration-300"
+						>
+							<i class="icon-[ri--github-fill]"></i>
 						</a>
 					</li>
 					<li>
